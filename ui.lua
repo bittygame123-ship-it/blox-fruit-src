@@ -1,4 +1,4 @@
--- UI: Dark/Red "Blox Fruits Script" window, tabs, toggles/sliders/dropdowns, config registry.
+-- UI: Project Eternal dark/red window, tabs, toggles/sliders/dropdowns, config registry.
 -- Tabs/sections carry a sea tag so Sea-2/Sea-3-only features stay hidden in other seas.
 local UIS = game:GetService("UserInputService")
 
@@ -59,14 +59,9 @@ function UI.build(Core)
 
     local header = new("Frame", { Name = "Header", Size = UDim2.new(1, 0, 0, 56), BackgroundTransparency = 1 }, root)
     new("TextLabel", {
-        Text = "Blox Fruits Script", Font = Enum.Font.GothamBold, TextSize = 18, TextColor3 = C.accent,
+        Text = "Project Eternal│By NoMxcry", Font = Enum.Font.GothamBold, TextSize = 17, TextColor3 = C.accent,
         TextXAlignment = Enum.TextXAlignment.Left, BackgroundTransparency = 1,
-        Size = UDim2.new(1, -120, 0, 22), Position = UDim2.fromOffset(16, 10),
-    }, header)
-    new("TextLabel", {
-        Text = "OpenSource", Font = Enum.Font.Gotham, TextSize = 12, TextColor3 = C.dim,
-        TextXAlignment = Enum.TextXAlignment.Left, BackgroundTransparency = 1,
-        Size = UDim2.new(1, -120, 0, 16), Position = UDim2.fromOffset(16, 32),
+        Size = UDim2.new(1, -120, 0, 26), Position = UDim2.fromOffset(16, 15),
     }, header)
 
     local function dot(color, x)
